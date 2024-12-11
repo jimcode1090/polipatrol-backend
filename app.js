@@ -21,9 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Configure Header HTTP - CORS
-app.use(cors({
-  origin: '*',  // Permite solicitudes solo desde tu frontend
-}));
+app.use(cors());
 
 // Configure logger HTTP request
 app.use(morgan("dev"));
